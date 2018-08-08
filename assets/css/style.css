@@ -1,0 +1,65 @@
+body {
+    background-image: url("../images/minecraft_office_background_by_goldenfurryofficial-d8hk3k7.png");
+    background-repeat: no-repeat;
+    background-color: black;
+}
+
+#title {
+    background-color: antiquewhite;
+    border-radius: 10px;
+    color: darkgreen;
+    opacity: .8;
+}
+
+#instructions {
+    background-color: mediumseagreen;
+    color: whitesmoke;
+    border-radius: 10px;
+    opacity: .8;
+}
+
+#winLose {
+    background-color: darkkhaki;
+    color: darkolivegreen;
+    font-weight: bold;
+    border-radius: 10px;
+    opacity: .8;
+}
+
+#losses {
+    padding-left: 10px;
+    opacity: .8;
+}
+
+#wins {
+    height: 50px;
+    padding-left: 10px;
+    opacity: .8;
+}
+#rGn {
+    background-color: darkolivegreen;
+    color: darkkhaki;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 10px;
+    opacity: .8;
+    padding-top: 30px;
+}
+
+#playerTotalText {
+    background-color: deepskyblue;
+    color: aliceblue;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 10px 10px 0px 0px;
+    opacity: .8;
+}
+
+#playerTotalNum {
+    background-color: deepskyblue;
+    color: aliceblue;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 0px 0px 10px 10px;
+    opacity: .8;
+}
