@@ -1,1 +1,1 @@
-Minecraft Collectors
+Minecraft Collector Game
