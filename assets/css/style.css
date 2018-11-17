@@ -60,7 +60,7 @@ body {
     color: aliceblue;
     text-align: center;
     font-weight: bold;
-    border-radius: 0px 0px 10px 10px;
+    border-radius: 10px 10px 10px 10px;
     opacity: .8;
 }
 
@@ -70,4 +70,24 @@ body {
 
 .crystal {
     margin: 0px 20px 0px 20px;
+}
+
+@media screen and (max-width: 600px) {
+    body {
+        background-image: url("../images/backgroundRotate.png");
+        background-repeat: no-repeat;
+        background-color: black;
+    }
+
+    #crystalImages {
+        text-align: center;
+    }
+
+    .crystal {
+        margin: 100px 20px 20px 20px;
+    }
+
+    row {
+        display:block;
+    }
 }

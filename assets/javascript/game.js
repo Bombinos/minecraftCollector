@@ -33,7 +33,7 @@ $(document).ready(function () {
         $("#rGn").html("Number to match: " + randomNum);
         $("#wins").html("<p>Wins: " + wins + "</p>");
         $("#losses").html("<p>Losses: " + losses + "</p>");
-        $("#playerTotalNum").html(counter);
+        $("#playerTotalNum").html("You've collected: " + counter);
         $(".crystal").hover(function () {
             $(this).css("opacity", "0.6");
             }, function () {
@@ -49,7 +49,7 @@ $(document).ready(function () {
 
     $("#crystalImages").on("click", ".crystal", function() {
         counter += parseInt($(this).attr("value"));
-        $("#playerTotalNum").html(counter);
+        $("#playerTotalNum").html("You've collected: " + counter);
         if (counter == randomNum) {
             wins++;
             resetG();
