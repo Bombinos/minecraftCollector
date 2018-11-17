@@ -6,7 +6,6 @@ body {
 
 #title {
     background-color: antiquewhite;
-    border-radius: 10px;
     color: darkgreen;
     opacity: .8;
 }
@@ -14,7 +13,6 @@ body {
 #instructions {
     background-color: mediumseagreen;
     color: whitesmoke;
-    border-radius: 10px;
     opacity: .8;
 }
 
@@ -22,7 +20,6 @@ body {
     background-color: darkkhaki;
     color: darkolivegreen;
     font-weight: bold;
-    border-radius: 10px;
     opacity: .8;
 }
 
@@ -41,7 +38,6 @@ body {
     color: darkkhaki;
     text-align: center;
     font-weight: bold;
-    border-radius: 10px;
     opacity: .8;
     padding-top: 30px;
 }
@@ -51,7 +47,6 @@ body {
     color: aliceblue;
     text-align: center;
     font-weight: bold;
-    border-radius: 10px 10px 0px 0px;
     opacity: .8;
 }
 
@@ -60,7 +55,6 @@ body {
     color: aliceblue;
     text-align: center;
     font-weight: bold;
-    border-radius: 10px 10px 10px 10px;
     opacity: .8;
 }
 
@@ -71,6 +65,86 @@ body {
 .crystal {
     margin: 0px 20px 0px 20px;
 }
+
+@media screen and (max-width: 1000px) {
+    /* body {
+        background-image: url("../images/backgroundRotate.png");
+        background-repeat: no-repeat;
+        background-color: black;
+    } */
+
+    #crystalImages {
+        text-align: center;
+    }
+
+    .crystal {
+        margin: 100px 30px 20px 30px;
+    }
+
+    row {
+        display:block;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    body {
+        background-image: url("../images/minecraft_office_background_by_goldenfurryofficial-d8hk3k7.png");
+        background-repeat: no-repeat;
+        background-color: black;
+    }
+
+    #crystalImages {
+        text-align: center;
+    }
+
+    .crystal {
+        margin: 100px 20px 20px 20px;
+    }
+
+    row {
+        display:block;
+    }
+}
+
+@media screen and (max-width: 814px) {
+body {
+    background-image: url("../images/minecraft_office_background_by_goldenfurryofficial-d8hk3k7.png");
+    background-repeat: no-repeat;
+    background-color: black;
+}
+
+#crystalImages {
+    text-align: center;
+}
+
+.crystal {
+    margin: 100px 5px 20px 5px;
+}
+
+row {
+    display:block;
+}
+};
+
+@media screen and (max-width: 690px) {
+    body {
+        background-image: url("../images/backgroundRotate.png");
+        background-repeat: no-repeat;
+        background-color: black;
+    }
+    
+    #crystalImages {
+        text-align: center;
+    }
+    
+    .crystal {
+        margin: 10px 5px 0px 5px;
+    }
+
+    row {
+        display:block;
+    }
+    }
 
 @media screen and (max-width: 600px) {
     body {
@@ -84,7 +158,7 @@ body {
     }
 
     .crystal {
-        margin: 100px 20px 20px 20px;
+        margin: 100px 0px 20px 0px;
     }
 
     row {
