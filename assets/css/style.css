@@ -63,3 +63,11 @@ body {
     border-radius: 0px 0px 10px 10px;
     opacity: .8;
 }
+
+#crystalImages {
+    text-align: left;
+}
+
+.crystal {
+    margin: 0px 20px 0px 20px;
+}
