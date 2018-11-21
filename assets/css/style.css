@@ -78,7 +78,7 @@ body {
     }
 
     .crystal {
-        margin: 100px 30px 20px 30px;
+        margin: 20px 30px 20px 30px;
     }
 
     row {
@@ -98,7 +98,7 @@ body {
     }
 
     .crystal {
-        margin: 100px 20px 20px 20px;
+        margin: 20px 20px 20px 20px;
     }
 
     row {
@@ -118,7 +118,7 @@ body {
 }
 
 .crystal {
-    margin: 100px 5px 20px 5px;
+    margin: 20px 5px 20px 5px;
 }
 
 row {
@@ -134,36 +134,62 @@ row {
     }
     
     #crystalImages {
+        display: block;
         text-align: center;
+        margin: 0px 0px 0px 0px;
     }
     
     .crystal {
-        margin: 10px 5px 0px 5px;
+        margin: 0px 5px 0px 5px;
+        height: 100px;
     }
 
     row {
         display:block;
+        margin: 300px 0px 0px 0px;
     }
     }
 
 @media screen and (max-width: 600px) {
+
+    html {
+        max-width: 100%;
+    }
+
     body {
         background-image: url("../images/backgroundRotate.png");
         background-repeat: no-repeat;
         background-color: black;
+        display: flex;
     }
 
     #crystalImages {
         text-align: center;
+<<<<<<< HEAD
         margin: 60px 0px 0px 0px;
     }
 
     .crystal {
         margin: 20px 5px 20px 5px;
         height: 125px;
+=======
+        display: block;
+        margin: 0px 0px 0px 0px;
+    }
+
+    .crystal {
+        margin: 50px 5px 0px 5px;
+        height: 100px;
+        vertical-align: baseline;
+>>>>>>> 6e2ab52820b0de19c6e1eee865d64557bab32f65
     }
 
     row {
         display:block;
+        margin: 300px 0px 0px 0px;
     }
+}
+
+@media screen and (max-width: 580px) {
+
 }
