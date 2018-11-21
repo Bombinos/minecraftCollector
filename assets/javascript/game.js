@@ -39,10 +39,10 @@ $(document).ready(function () {
         setCrystals();
         randomNumber();
         counter = 0;
-        $("#rGn").html("Number to match: " + randomNum);
+        $("#rGn").html("Weight Ordered: " + randomNum + " lbs");
         $("#wins").html("<p>Wins: " + wins + "</p>");
         $("#losses").html("<p>Losses: " + losses + "</p>");
-        $("#playerTotalNum").html("You've collected: " + counter);
+        $("#playerTotalNum").html("You've collected: " + counter + " lbs");
         $(".crystal").hover(function () {
             $(this).css("opacity", "0.6");
             }, function () {
@@ -55,21 +55,12 @@ $(document).ready(function () {
     $("#btnWrap").on("click", ".btn", function() {
         $("#instructions").toggle();
     });
-    // $("#btnWrap").on("click", ".btn", function() {
-    //     if ($("#instructions").css("display","block")) {
-    //         $("#instructionButton").text("Show Instructions")
-    //         $("#instructions").css("display","none")
-    //     } else {
-    //         $("#instructions").css("display","block")
-    //         $("#instructionButton").text("Hide Instructions")
-    //     }
-    // });
 
     $("#crystalImages").on("click", ".crystal", function() {
         counter += parseInt($(this).attr("value"));
         audioElement.play();
         audioElementB.play();
-        $("#playerTotalNum").html("You've collected: " + counter);
+        $("#playerTotalNum").html("You've collected: " + counter + " lbs");
         if (counter == randomNum) {
             wins++;
             resetG();
