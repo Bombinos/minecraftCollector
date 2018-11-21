@@ -160,17 +160,17 @@ row {
         background-image: url("../images/backgroundRotate.png");
         background-repeat: no-repeat;
         background-color: black;
-        display: flex;
+     
     }
 
     #crystalImages {
         text-align: center;
         display: block;
-        margin: 0px 0px 0px 0px;
+        margin: 75px 0px 25px 0px;
     }
 
     .crystal {
-        margin: 50px 5px 0px 5px;
+        margin: 25px 5px 0px 5px;
         height: 100px;
         vertical-align: baseline;
     }
