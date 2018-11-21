@@ -1,6 +1,14 @@
 
 $(document).ready(function () {
 
+    var audioElement = document.createElement('audio');
+    audioElement.setAttribute('src', 'assets/audio/Volume Alpha - 03 - Subwoofer Lullaby.mp3');
+    audioElement.load();
+
+    var audioElementB = document.createElement('audio');
+    audioElementB.setAttribute('src', 'assets/audio/pop.mp3');
+    audioElementB.load();
+
     var images = ["assets/images/Lapizs_lazuli_dye.png",
         "assets/images/Emerald.png",
         "assets/images/Minecraft_diamond_ore.png",
@@ -26,6 +34,7 @@ $(document).ready(function () {
     }
 
     function resetG() {
+        
         $("#crystalImages").empty();
         setCrystals();
         randomNumber();
@@ -47,6 +56,8 @@ $(document).ready(function () {
 
     $("#crystalImages").on("click", ".crystal", function() {
         counter += parseInt($(this).attr("value"));
+        audioElement.play();
+        audioElementB.play();
         $("#playerTotalNum").html("You've collected: " + counter);
         if (counter == randomNum) {
             wins++;
