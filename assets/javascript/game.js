@@ -52,7 +52,18 @@ $(document).ready(function () {
 
     resetG();
 
-
+    $("#btnWrap").on("click", ".btn", function() {
+        $("#instructions").toggle();
+    });
+    // $("#btnWrap").on("click", ".btn", function() {
+    //     if ($("#instructions").css("display","block")) {
+    //         $("#instructionButton").text("Show Instructions")
+    //         $("#instructions").css("display","none")
+    //     } else {
+    //         $("#instructions").css("display","block")
+    //         $("#instructionButton").text("Hide Instructions")
+    //     }
+    // });
 
     $("#crystalImages").on("click", ".crystal", function() {
         counter += parseInt($(this).attr("value"));
