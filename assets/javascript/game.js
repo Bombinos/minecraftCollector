@@ -39,10 +39,8 @@ $(document).ready(function () {
             }, function () {
                 $(this).css("opacity", "1");
             });
-       
     }
 
-    // randomNumber();
     resetG();
 
 
@@ -58,12 +56,4 @@ $(document).ready(function () {
             resetG();
         };
     });
-
-
-    
  });
-
-    // $( "#list" ).on( "click", "a", function( event ) {
-    //     event.preventDefault();
-    //     console.log( $( this ).text() );
-    // });
