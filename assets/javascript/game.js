@@ -18,16 +18,16 @@ $(document).ready(function () {
     var losses = 0;
     var counter = 0;
 
-    var winAnimate = document.createElement('video');
-    winAnimate.setAttribute('src', 'assets/images/steve.mp4');
-    winAnimate.load();
+    // var winAnimate = document.createElement('video');
+    // winAnimate.setAttribute('src', 'assets/images/steve.mp4');
+    // winAnimate.load();
 
-    var loseAnimate = document.createElement('video');
-    loseAnimate.setAttribute('src', 'assets/images/steveTryAgain.png');
-    loseAnimate.load();
+    // var loseAnimate = document.createElement('video');
+    // loseAnimate.setAttribute('src', 'assets/images/steveTryAgain.png');
+    // loseAnimate.load();
 
     function randomNumber() {
-        randomNum = Math.floor(Math.random() * 102) + 19;
+        randomNum = Math.floor(Math.random() * 120) + 60;
     }
 
     function setCrystals() {
@@ -70,11 +70,12 @@ $(document).ready(function () {
         audioElementB.play();
         $("#playerTotalNum").html("<p id='playerWeightText'>" + "You've collected: " + "</p>" + "<p id='playerWeight'>" + counter + " lbs" + "</p>");
         if (counter == randomNum) {
-    
+            $("#animate").html("<img src='assets/images/dance.gif' height='150px'>");
+            $("#animateText").html("<p id='anTextPosition'>" + " " + "You Win! Please Play Again" + "</p>");
             wins++;
             resetG();
         } else if (counter > randomNum) {
-            $("#animate").html("<img src='assets/images/steveTryAgain.png' height='100px'>");
+            $("#animate").html("<img src='assets/images/steveTryAgain.png' height='150px'>");
             $("#animateText").html("<p id='anTextPosition'>" + " " + "Sorry. Try Again!" + "</p>");
             losses++;
             resetG();

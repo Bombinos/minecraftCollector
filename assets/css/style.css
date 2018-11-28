@@ -13,13 +13,13 @@ body {
 
 #title {
     background-color: deepskyblue;
-    color: aliceblue;
-    opacity: 0.8;
+    color: white;
+    opacity: 0.9;
 }
 
 h1 {
     background-color: deepskyblue;
-    color: aliceblue;
+    color: white;
     opacity: 1;
     font-weight: bold;
 }
@@ -145,26 +145,26 @@ h1 {
 }
 
 #animate {
-    text-align: right;
+    text-align: center;
 }
 
 #animateText {
-    text-align: left;
+    text-align: center;
     background-color: rgba(255, 255, 255, 0);
     color: whitesmoke;
     font-weight: bold;
-    font-size:90px;
+    font-size:60px;
 }
 
 @media screen and (max-width: 1900px) {
     #animateText {
-        font-size:80px;
+        font-size:60px;
     }
 }
 
 @media screen and (max-width: 1400px) {
     #animateText {
-        font-size:70px;
+        font-size:60px;
     }
 }
 
@@ -187,16 +187,16 @@ h1 {
 
     #animateText {
         
-        font-size:50px;
+        font-size:40px;
         margin: 0px 0px 0px 0px;
-        line-height: 90px;
+        line-height: 60px;
         }
 
     #anTextPosition {
         
-        font-size:50px;
+        font-size:40px;
         margin: 0px 0px 0px 0px;
-        line-height: 90px;
+        line-height: 60px;
 
     }
     
@@ -210,7 +210,7 @@ h1 {
     }
 
     #animateText {
-        font-size:45px;
+        font-size:40px;
         vertical-align: middle;
         line-height: 47px;
         }
@@ -230,14 +230,14 @@ body {
 
 #animateText {
     
-    font-size:40px;
+    font-size:30px;
     margin: 0px 0px 0px 0px;
     line-height: 90px;
     }
 
 #anTextPosition {
     
-    font-size:40px;
+    font-size:30px;
     margin: 0px 0px 0px 0px;
     line-height: 90px;
 
@@ -249,14 +249,14 @@ body {
 
     #animateText {
     
-        font-size:30px;
+        font-size:20px;
         margin: 0px 0px 0px 0px;
         line-height: 90px;
         }
     
     #anTextPosition {
         
-        font-size:30px;
+        font-size:20px;
         margin: 0px 0px 0px 0px;
         line-height: 90px;
     
