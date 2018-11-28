@@ -18,6 +18,14 @@ $(document).ready(function () {
     var losses = 0;
     var counter = 0;
 
+    var winAnimate = document.createElement('video');
+    winAnimate.setAttribute('src', 'assets/images/steve.mp4');
+    winAnimate.load();
+
+    var loseAnimate = document.createElement('video');
+    loseAnimate.setAttribute('src', 'assets/images/steveTryAgain.png');
+    loseAnimate.load();
+
     function randomNumber() {
         randomNum = Math.floor(Math.random() * 102) + 19;
     }
@@ -34,7 +42,6 @@ $(document).ready(function () {
     }
 
     function resetG() {
-        
         $("#crystalImages").empty();
         setCrystals();
         randomNumber();
@@ -56,14 +63,19 @@ $(document).ready(function () {
     });
 
     $("#crystalImages").on("click", ".crystal", function() {
+        $("#animate").html("");
+        $("#animateText").html("");
         counter += parseInt($(this).attr("value"));
         audioElement.play();
         audioElementB.play();
         $("#playerTotalNum").html("<p id='playerWeightText'>" + "You've collected: " + "</p>" + "<p id='playerWeight'>" + counter + " lbs" + "</p>");
         if (counter == randomNum) {
+    
             wins++;
             resetG();
         } else if (counter > randomNum) {
+            $("#animate").html("<img src='assets/images/steveTryAgain.png' height='100px'>");
+            $("#animateText").html("<p id='anTextPosition'>" + " " + "Sorry. Try Again!" + "</p>");
             losses++;
             resetG();
         };
